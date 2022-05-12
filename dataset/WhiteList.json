@@ -1,0 +1,42 @@
+{
+	"name": "WhiteList",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SOCBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "whitelist",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "whitelist.xlsx",
+				"container": "demo"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "whitelist_id",
+				"type": "String"
+			},
+			{
+				"name": "email",
+				"type": "String"
+			},
+			{
+				"name": "ip_address",
+				"type": "String"
+			},
+			{
+				"name": "ip_address_v6",
+				"type": "String"
+			},
+			{
+				"name": "mac_address",
+				"type": "String"
+			}
+		]
+	}
+}
