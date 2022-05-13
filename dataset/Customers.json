@@ -1,0 +1,58 @@
+{
+	"name": "Customers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SOCBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "customers",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "customers.xlsx",
+				"container": "demo"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "String"
+			},
+			{
+				"name": "customer_name",
+				"type": "String"
+			},
+			{
+				"name": "poc_fn",
+				"type": "String"
+			},
+			{
+				"name": "poc_ln",
+				"type": "String"
+			},
+			{
+				"name": "contact_num",
+				"type": "String"
+			},
+			{
+				"name": "email",
+				"type": "String"
+			},
+			{
+				"name": "industry",
+				"type": "String"
+			},
+			{
+				"name": "assignment_type",
+				"type": "String"
+			},
+			{
+				"name": "assigned_to",
+				"type": "String"
+			}
+		]
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"name": "Closed_Incidents",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SOCBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "closed_incidents",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "closed_incidents.xlsx",
+				"container": "demo"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "incident_id",
+				"type": "String"
+			},
+			{
+				"name": "ip_address",
+				"type": "String"
+			},
+			{
+				"name": "ip_address_v6",
+				"type": "String"
+			},
+			{
+				"name": "mac_address",
+				"type": "String"
+			},
+			{
+				"name": "report_date",
+				"type": "String"
+			},
+			{
+				"name": "assigned_to",
+				"type": "String"
+			},
+			{
+				"name": "severity",
+				"type": "String"
+			},
+			{
+				"name": "incident_type",
+				"type": "String"
+			},
+			{
+				"name": "description",
+				"type": "String"
+			},
+			{
+				"name": "solution",
+				"type": "String"
+			}
+		]
+	}
+}
