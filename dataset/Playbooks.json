@@ -1,0 +1,34 @@
+{
+	"name": "Playbooks",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SOCBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "playbooks",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "playbooks.xlsx",
+				"container": "demo"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "playbook_name",
+				"type": "String"
+			},
+			{
+				"name": "file_link",
+				"type": "String"
+			},
+			{
+				"name": " last_updated",
+				"type": "String"
+			}
+		]
+	}
+}
