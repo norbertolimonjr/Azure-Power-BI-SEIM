@@ -1,0 +1,50 @@
+{
+	"name": "Affiliates",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SOCBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "partners",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "partners.xlsx",
+				"container": "demo"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "affiliate_id",
+				"type": "String"
+			},
+			{
+				"name": "affiliate_name",
+				"type": "String"
+			},
+			{
+				"name": "poc_fn",
+				"type": "String"
+			},
+			{
+				"name": "poc_ln",
+				"type": "String"
+			},
+			{
+				"name": "contact_num",
+				"type": "String"
+			},
+			{
+				"name": "email",
+				"type": "String"
+			},
+			{
+				"name": "industry",
+				"type": "String"
+			}
+		]
+	}
+}
