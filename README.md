@@ -1,4 +1,4 @@
-# Power_BI_SEIM_Dashboard
+## First Attempt at a SEIM for the Microsoft Ecosystem, using Power BI instead of Azure Sentinel
 
 - Data Modeling & SEIM Dashoard: 
 - ![logical design](https://user-images.githubusercontent.com/68612270/170852245-3268e500-2ba8-45c5-9356-a7b0f652b5f8.png)
